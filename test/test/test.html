@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jQuery-3.6.0.js"></script>
+    <style>
+        .main_left {
+            width: 150px;
+            height: 100%;
+            float: left;
+            background: #c0c0c0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 左侧导航 -->
+    <div class="main_left" style="height:100%">
+        <ul>
+            <li data-src="./侧边栏.html">朝阳</li>
+            <li data-src="./test.html">海淀</li>
+            <li data-src="../JS基础/jQuery基础-创造新的元素.html">丰台</li>
+        </ul>
+    </div>
+    <!-- 右侧内容 -->
+    <div class="main_right">
+        <iframe frameborder="0" scrolling="yes" style="width:80%;height:100%" src="./侧边栏.html" id="aa"></iframe>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".main_left li").on("click", function () {
+            console.log('11');
+            var address = $(this).attr("data-src");
+            $("iframe").attr("src", address);
+        });
+    });
+</script>
+
+</html>

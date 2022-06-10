@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧边栏demo</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- jQuery库 -->
+    <script src="./js/jQuery-3.6.0.js" type="text/javascript"></script>
+    <!-- 左进左出效果一 -->
+    <script src="./js/nav01.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="content">
+        <!-- 左边侧边栏 -->
+        <div class="content_left">
+            <!-- 顶部标题 -->
+            <div class="left_title">
+                <a href="javascript:void(0)">侧边栏demo标题</a>
+            </div>
+            <!-- 分割线 -->
+            <div class="seg"></div>
+            <!-- 菜单栏 -->
+            <div class="nav">
+                <!-- 菜单栏子项 -->
+                <div class="nav_menu">
+                    <!-- 主标题 -->
+                    <div class="nav_title">测试</div>
+                    <!-- 子标题 -->
+                    <div class="nav_content">
+                        <a href="#" data-src="./test/test2.html" class="test">
+                            测试界面2
+                        </a>
+                        <a href="#" data-src="./test/test3.html" class="test">
+                            测试界面3
+                        </a>
+                    </div>
+                </div>
+                <div class="seg"></div>
+            </div>
+        </div>
+
+
+        <!-- 右边内容区 -->
+        <div class="content_right">
+            <h1>内容区</h1>
+            <iframe frameborder="0" src="./test/test1.html" id="iframe1">
+            </iframe>
+        </div>
+    </div>
+</body>
+
+
+</html>
